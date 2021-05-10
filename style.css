@@ -1,7 +1,30 @@
+/*Police*/
+
+@font-face{
+    font-family: "Raleway";
+    src: url("static/Raleway-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+p {
+  font-family: "Raleway";
+}
+
 /* Page */
 
 #container{
-    margin: auto;
+    margin: 2% auto;
+    box-sizing: border-box; 
     width: 95%;
 }
 
@@ -9,20 +32,103 @@
 
 .header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 
 }
 
 .logosite
 {
-
+    cursor: pointer;
 }
 
 .navigation{
     display:flex;
+    margin-right: 4%;
 
 }
 
-.inscrire{
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    color: #0065FC;
+}
+  
+header ul li a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+    color: #0065FC;
+}
+  
+header ul li {
+    margin-left: 35px;
+}
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+  
+.inscrire a {
+    color: #0065FC;
+    margin-right: 0%;
+}
+  
+.inscrire a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+}
+  
+.inscrire {
+    padding-left: 35px;
+}
+  
+/*folmuraire de recherche */
+
+.search{
 
 }
-/* header folmuraire de recherche */
+
+/*filtres */
+
+.filtres{
+
+}
+
+.textfilters{
+
+}
+
+.filterlist{
+
+}
+
+.filtername{
+
+}
+
+.filtername:hover{
+
+}
+
+.iconefiltres{
+
+}
+
+.iconefiltres i{
+
+}
+
+/* info */
+
+.info{
+
+}
+
+.infotext{
+    
+}
