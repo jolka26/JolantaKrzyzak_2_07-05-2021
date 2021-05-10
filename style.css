@@ -1,0 +1,28 @@
+/* Page */
+
+#container{
+    margin: auto;
+    width: 95%;
+}
+
+/* header logo & menu */
+
+.header{
+    display: flex;
+
+}
+
+.logosite
+{
+
+}
+
+.navigation{
+    display:flex;
+
+}
+
+.inscrire{
+
+}
+/* header folmuraire de recherche */
