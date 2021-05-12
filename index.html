@@ -10,11 +10,12 @@
 
 <body>
     <div id="container">
+
         <!-- Header logo & menu-->
         <header>
             <div class="header">
                 <div id="logo">
-                    <img class="logosite" src="images/logo/Reservia.svg" alt="reservia">
+                    <img class="logoSite" src="images/logo/Reservia.svg" alt="reservia">
                 </div>
                 <nav class="navigation">
                     <ul>
@@ -37,58 +38,95 @@
         <div class="search">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
-            <form class="searchBar" action="#">
 
-
-                <!--tutaj zrobic formularz  DON'T FORGET!!!!-->
-            </form>
+            <div class="logoSearch">
+                <div class="iconeMap">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <form method="POST" action="#">
+                    <p>
+                        <input type="text" class="searchInput" placeholder="Marseille,France">
+                    </p>
+                </form>
+                <button class="searchButton">
+                    <span>Rechercher</span>
+                </button>
+            </div>
         </div>
-
 
         <!--filtres-->
         <div class="filtres">
-            <h2 class="textfiltres">Filtres</h2>
-            <div class="filterlist">
-        
-                <div class="filtrname">
-                    <div class="iconefiltres">
+            <h3 class="textFiltres">Filtres</h3>
+            <div class="filtreList">
+
+                <div class="filtreName">
+                    <div class="iconeFiltres">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <span class="titre">Économique</span>
                 </div>
-        
-                <div class="filtername">
-                    <div class="iconefiltres">
-                        <i class="fas fa-money-bill-wave"></i>
+
+                <div class="filtreName">
+                    <div class="iconeFiltres">
+                        <i class="fas fa-child"></i>
                     </div>
-                    <span class="titre">Économique</span>
+                    <span class="titre">Familial</span>
                 </div>
-        
-                <div class="filtrname">
-                    <div class="iconefiltres">
-                        <i class="fas fa-money-bill-wave"></i>
+
+                <div class="filtreName">
+                    <div class="iconeFiltres">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <span class="titre">Économique</span>
+                    <span class="titre">Romantique</span>
                 </div>
-        
-                <div class="filtername">
-                    <div class="iconefiltres">
-                        <i class="fas fa-money-bill-wave"></i>
+
+                <div class="filtreName">
+                    <div class="iconeFiltres">
+                        <i class="fas fa-dog"></i>
                     </div>
-                    <span class="titre">Économique</span>
+                    <span class="titre">Animaux autorisés</span>
                 </div>
 
             </div>
         </div>
 
-
         <!-- info-->
         <div class="info">
             <i class="fas fa-info-circle"></i>
-            <p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="infoText">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
+         <!-- OBRAZKI-->
 
+
+         <!-- Footer-->
+         <footer>
+             <div class="about">
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="">Fonctionnement du site</a></li>
+                    <li><a href="">Conditions générales de vente</a></li>
+                    <li><a href="">Données et confidentialités</a></li>
+                </ul>
+             </div>
+             <div class="hotels">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="">Charte qualité</a></li>
+                    <li><a href="">Soumettre votre hôtel</a></li>
+                </ul>
+             </div>
+             <div class="assistance">
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="">Centre d'aide</a></li>
+                    <li><a href="">Nous contacter</a></li>
+
+                </ul>
+             </div>
+         </footer>
+         
     </div>
 </body>
 
 </html>
+ 

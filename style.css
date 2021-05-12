@@ -13,12 +13,16 @@ h5,
 h6,
 a {
   font-family: "Raleway";
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 p {
   font-family: "Raleway";
 }
+
+input {
+    font-family: "Raleway";
+  }
 
 /* Page */
 
@@ -27,6 +31,9 @@ p {
     box-sizing: border-box; 
     width: 95%;
 }
+
+
+
 
 /* header logo & menu */
 
@@ -38,7 +45,7 @@ p {
 
 }
 
-.logosite
+.logoSite
 {
     cursor: pointer;
 }
@@ -75,6 +82,7 @@ a {
   
 .inscrire a {
     color: #0065FC;
+    font-weight: bold;
     margin-right: 0%;
 }
   
@@ -86,49 +94,159 @@ a {
 .inscrire {
     padding-left: 35px;
 }
+
+
+
   
 /*folmuraire de recherche */
 
-.search{
+.logoSearch {
+    display: inline-flex;
+    align-items: center;
+  }
 
+.iconeMap {
+    font-size: 25px;
+    background-color: #F1F1F4;
+    border-radius: 1rem 0 0 1rem;
+    padding: 10px 10px;
+    width: 50px;
+    text-align: center;
+  }
+  
+.searchInput {
+    padding: 10px;
+    font-weight: bold;
+    border-right: none;
+    border-left: none;
+    border-top: #c9c4c4c5 1px solid;
+    border-bottom: #c9c4c4c5 1px solid;
+    padding: 0 1.5em;
+    height: 47px;
+    font-size: 15px;
 }
+  
+.searchButton {
+    border-radius: 0px 18px 18px 0;
+    padding: 15px;
+    background-color: #0065FC;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+  
 
 /*filtres */
 
-.filtres{
-
+.filtres {
+    display: flex;
+    font-size: 1em; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.textfilters{
-
+.textFilters{
+    align-self: center;
+    font-size: 1.3em;
+    margin: 0 20px 0 0;
+    
 }
 
-.filterlist{
-
+.filtreList {
+    display: flex;
+    margin-left: 30px;
 }
 
-.filtername{
-
+.filtreName {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-right: 1.5em;
+    border: 2px solid #DEEBFF;
+    border-radius: 2em;
+    font-weight: bold;
 }
 
-.filtername:hover{
-
+.filtreName:hover {
+    cursor: pointer;
+    border-color: #0065FC;
+    color: #0065FC;
 }
 
-.iconefiltres{
-
+.filtreName span {
+    font-weight: bold;
+    padding-right: 1.5em;
+    padding-left: 0.5em;
+    cursor: pointer;
 }
 
-.iconefiltres i{
+.iconeFiltres {
+    position: relative;
+    right: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
 
+.iconeFiltres i {
+    margin: 17px;
+    color: #0065FC;
 }
 
 /* info */
 
-.info{
+.info {
+   display: flex;
+}
+
+.fa-info-circle {
+    text-align: center;
+    color: #0065fc;
+    border-radius: 100%;
+    height: 33px;
+    width: 33px;
+    border: solid 1px #d9d9d9;
+    padding: 7px;
+    box-sizing: border-box;
 
 }
 
-.infotext{
-    
+.infoText {
+    padding-left: 15px; 
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    padding: 40px 50px 50px;
+    background-color: #F1F1F4;
+}
+
+footer ul {
+    list-style: none;
+    /* padding-bottom: 15px; */
+
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+
+.about {
+    width: 40%;
+}
+
+.hotels {
+    width: 40%;
+}
+
+.assistance {
+    width: 40%;
 }
