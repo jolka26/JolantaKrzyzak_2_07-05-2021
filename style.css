@@ -205,11 +205,11 @@ a {
 
 .fa-info-circle {
     text-align: center;
-    color: #0065fc;
+    color: #0065FC;
     border-radius: 100%;
     height: 33px;
     width: 33px;
-    border: solid 1px #d9d9d9;
+    border: solid 1px #c9c4c4c5;
     padding: 7px;
     box-sizing: border-box;
 
@@ -220,11 +220,125 @@ a {
 }
 
 
+
+
+/* HOTELS HEBERGEMENTS*/
+
+.hebergementContainer {
+    display: flex;
+    background-color: red;
+    border-radius: 20px;
+
+    
+}
+/* hotelsssssssssssssssssssssssss */
+
+.boxHolels {
+    /* display: flex;
+    background-color: green; 
+    border-radius: 20px; */
+
+}
+
+.hebergements {
+
+    width: 60%;
+    padding: 20px;
+    margin: 0 25px 0 0;
+
+
+}
+
+.hotels {
+  display: flex; 
+   flex-wrap: wrap;
+   background-color: green;
+     
+  
+}
+
+.hotelCase {
+    display: flex;
+    flex-wrap: wrap; 
+    /* width: 30%; */
+    /* width: calc(33.3% - 30px);  */
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box; 
+ 
+}
+
+.hotelCase img {
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.hotelCase h3 {
+    margin: 5px 10px;
+}
+
+.hotelCase p {
+    margin: 5px 10px;
+}
+
+.stars {
+    margin: 5px 10px;
+}
+
+.blue  {
+    color:#0065FC;
+}
+
+.grey {
+    color: #DEEBFF;
+}
+
+
+.showMore {
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+/* POPULAR */
+
+.popular {
+    background-color: yellow;
+    border-radius: 15px;
+    /* display: flex; */
+    width: 30%;
+
+}
+
+.boxPopular {
+
+
+}
+ .popularCase {
+
+ }
+
+ .popularCase img {
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+ }
+
+
+
+
 /* footer */
 
 footer {
     display: flex;
-    padding: 40px 50px 50px;
+    padding: 45px 50px 50px;
     background-color: #F1F1F4;
 }
 
@@ -235,10 +349,16 @@ footer ul {
 }
 
 footer li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+footer h3 {
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
 
+/* 
 .about {
     width: 40%;
 }
@@ -249,4 +369,8 @@ footer li {
 
 .assistance {
     width: 40%;
+} */
+.box {
+    width: 40%;
 }
+
