@@ -40,6 +40,7 @@ input {
 
 body {
     margin: 0;
+    background-color: #fff;
 }
 
 
@@ -268,7 +269,7 @@ a {
 }
 
 .hotel_case img {
-    background-color: white;
+    /* background-color: white; */
     border-radius: 15px 15px 0px 0px;
     cursor: pointer;
     width: 100%;
@@ -368,19 +369,18 @@ a {
 
  .box_activite {
     margin-top: 60px;
-    margin-bottom: 60px;
 } 
 
 .activites {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
     gap: 30px;
     grid-auto-flow: column;
-    height: 850px;
+    height: 800px;
 }
 
 .block1{
-    grid-row-end: span 3;
+    grid-row-end: span 11;
 }
 
 .block1 img {
@@ -390,7 +390,7 @@ a {
 } 
 
 .block2{
-    grid-row-end: span 2;
+    grid-row-end: span 7;
 }
 
 .block2 img {
@@ -400,13 +400,16 @@ a {
 }
 
 .block3{
-    grid-row-end: span 1;
+    grid-row-end: span 4;
 }
 
 .block3 img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
+}
+.h3_block3 {
+    margin-top: -100px;
 }
 
 .activite_case {
@@ -433,7 +436,6 @@ footer {
     height: 100%;
     padding: 45px 50px 50px;
     background-color: #F2F2F2;
-    margin-top: auto;
 }
 
 
@@ -455,3 +457,296 @@ footer h3 {
     width: 40%;
 }
 
+/* RESPONSIVE */
+
+/* Mobile (phones, 600px and down) */
+@media only screen and (max-width: 667px) {
+
+    #container {
+        width: 100%;
+        margin: 0;
+        background-color: #fff;  
+    }
+
+    .logo_site {
+        /* margin-left: 5px; */
+        margin-top: 20px;
+    }
+
+    .inscrire {
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        font-size: 1.2em;
+    }
+
+    .inscrire a:hover {
+        border-top: none;
+    }
+
+    .header {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        border-top: none;
+    }
+
+    nav li {
+        width: 50%;
+        margin-top: 10px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav li:hover {
+        border-bottom-color: #0065FC; 
+    }
+
+    /* search  */
+    .search {
+        margin: 4%;
+    }
+    .icone_map {
+        width: 30px;
+    }
+
+    .search_button span {
+        display: none;
+    }
+    .search_button {
+        border-radius: 10px;
+    }
+
+    .search_button i {
+        display: inline;
+    }
+    /* filtres */
+    .filtres {
+        display: grid;
+    }
+    .text_filtres{
+    margin-left: 25px;
+
+    }
+
+    .filtre_list {
+        flex-direction: column;
+    }
+
+    .filtre_name{
+        margin-bottom: 10px;
+    }
+
+    /*  info */
+    .fa-info-circle {
+        margin: 10px;
+    }
+    .info_text {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    /* hebergement et popular container */
+    .hebergement_container { 
+        flex-direction: column;
+    }
+
+    /* hebergement et popular container */
+    .box_hotels {
+        background-color: #fff;
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .hotels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_hotel {
+        margin: 10px;
+        padding: 0;
+    }
+
+    /* hebergement populaire */
+    .box_popular {
+        /* display: grid; */
+        width: 100%;
+        order: 1;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .about_popular_hotel{
+        align-content: stretch;
+        font-size: 12px;
+    }
+
+    /* activite */
+    .box_activite {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .activites{
+        display: flex;
+        flex-direction: column;
+        height: auto;  
+    }
+
+    #title3 {
+        margin-left: 10px;
+    }
+
+    .block3 img{
+        height: 100%;
+    }
+
+    .h3_block3 {
+        margin-top: 15px;
+    }
+
+    /* footer */
+    footer{
+        width: auto;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .box {
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+/* Tablet (Tablet, ordinateur max 1024) */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .filtre_list {
+        margin: 10px;
+    }
+    
+    .hebergement_container { 
+        flex-direction: column;
+    }
+    
+    .box_hotels {
+        background-color: #fff;
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    .hotels {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about_hotel {
+        margin: 10px;
+        padding: 0;
+    } 
+    
+    .hotel_case {
+        height: 330px;
+    }
+
+    .hotel_case img {
+        height: 190px;
+    }
+
+    .about_hotel {
+        text-align: center;
+    }
+
+    .show_more {
+        font-size: 20px;
+        text-align: end ;
+        padding: 10px;
+    }
+
+    .activites {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .activite_case {
+        height: 187px;
+    }
+
+    .activites img{
+        height: 145px;
+    }
+
+    .h3_block3 {
+        margin-top: 15px;
+    }
+
+    footer{
+        width: auto;
+        display: flex;
+        margin-top: 40px;
+        padding: 0;
+    }
+    
+    .box {
+        width: 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra large ecran (large laptops and desktops, 1025px and up) */
+@media (min-width: 1025px) and (max-width: 1600px) {
+
+
+    .popular {
+        padding:10px;
+        margin: 0;
+    }
+
+   .about_popular_hotel {
+        align-content: stretch;
+        font-size: 14px;
+    }
+
+    .block3 img{
+        height: 100%;
+    }
+
+    .h3_block3 {
+        margin-top: 15px;
+    }
+
+    footer {
+        width: auto;
+    }
+}
