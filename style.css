@@ -47,7 +47,7 @@ body {
 
 /* HEADER - LOGO & MENU */
 
-.header{
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -405,11 +405,12 @@ a {
 
 .block3 img {
     width: 100%;
+    object-fit: cover;
     /* CHROME */
     height: 70%; 
     /* FIREFOX */
     /* height: inherit;  */
-    object-fit: cover;
+   
 }
 .h3_block3 {
     /* CHROME */
@@ -475,7 +476,6 @@ footer h3 {
     input {
         font-family: "Raleway";
     }
-    
 
     #container {
         width: 100%;
@@ -483,14 +483,18 @@ footer h3 {
         background-color: #fff;  
     }
 
+    #logo{
+        padding: 10px;
+    }
+
     .logo_site {
-        /* margin-left: 5px; */
         margin-top: 20px;
+        margin-right: 210px;
     }
 
     .inscrire {
         position: absolute;
-        top: 35px;
+        top: 45px;
         right: 30px;
         font-size: 1.2em;
     }
@@ -498,15 +502,11 @@ footer h3 {
     .inscrire a:hover {
         border-top: none;
     }
-/* 
-    header {
-      width: 100%;
+    /* MENU HEB ET ACT*/
 
-    } */
-
-    .header {
-        width: 100%;
-        display: grid;
+    .menu {
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
@@ -514,33 +514,32 @@ footer h3 {
     nav {
         display: flex;
         width: 100%;
-        margin-top: 2px; 
-        /* border-bottom: 3px solid green; */
+        margin-top: 2px;
     }
 
     nav ul {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
+        margin-left: 0px;
+        margin-right: -7px;
         border-bottom: 3px solid #F2F2F2;
     }
 
+    nav li {
+        width: 100%;
+        margin-top: 10px; 
+    }
+  
     nav ul li a:hover {
         border-top: none;
-    }
-
-    nav li {
-        width: 50%;
-        margin-top: 10px;
-        /* border-bottom: 3px solid red; */
-    }
-
-    nav li:hover {
-        border-bottom-color: #0065FC; 
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 20px;
     }
 
     /* search  */
     .search {
-        margin: 4%;
+        margin: 15px;
+        padding: 5px;
     }
     .icone_map {
         width: 30px;
@@ -556,6 +555,7 @@ footer h3 {
     .search_button i {
         display: inline;
     }
+
     /* filtres */
     .filtres {
         display: grid;
