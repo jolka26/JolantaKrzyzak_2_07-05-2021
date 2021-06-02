@@ -39,7 +39,7 @@ input {
 }
 
 body {
-    margin: 0;
+    margin: 5px;
     background-color: #fff;
 }
 
@@ -401,6 +401,7 @@ a {
 
 .block3{
     grid-row-end: span 4;
+ 
 }
 
 .block3 img {
@@ -410,6 +411,7 @@ a {
     height: 70%;
     /* FIREFOX */
     /* height: inherit;  */
+    -moz-image-height: 100%;
    
 }
 .h3_block3 {
@@ -629,6 +631,7 @@ footer h3 {
     .about_popular_hotel{
         align-content: stretch;
         font-size: 11px;
+        padding: 0;
     }
 
     /* activite */
